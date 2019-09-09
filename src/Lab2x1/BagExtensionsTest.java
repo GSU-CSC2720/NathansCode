@@ -1,3 +1,4 @@
+package Lab2x1;
 
 /**
  * This class performs tests on the extensions to the ArrayBag class.

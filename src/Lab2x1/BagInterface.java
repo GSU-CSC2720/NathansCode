@@ -1,3 +1,5 @@
+package Lab2x1;
+
 /**
    An interface that describes the operations of a bag of objects.
 
