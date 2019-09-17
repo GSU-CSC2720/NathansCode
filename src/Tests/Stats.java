@@ -10,9 +10,7 @@ public class Stats {
             max = value;
         }
         avg = (avg + value) / 2;
-    }
 
-    public void printValues() {
         System.out.println("Minimum: " + min + ", maximum: " + max + ", average: " + avg);
     }
 }
