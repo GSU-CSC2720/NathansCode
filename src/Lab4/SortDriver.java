@@ -48,7 +48,7 @@ public class SortDriver {
 
         for (int i = 0; i < size; i++) {
             int value = generator.nextInt(size);
-            result[i] = new Integer(value);
+            result[i] = value;
         }
 
         return result;
