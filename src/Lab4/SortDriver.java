@@ -16,21 +16,33 @@ public class SortDriver {
         int trials;
         Integer data[];
 
-        //CREATE THE INSTANCE OF THE INSTRUMENTED SORT CLASS HERE
+        SortArrayInstrumented sai = new SortArrayInstrumented();
 
         System.out.println("What size arrays should be used?");
         arraySize = getInt("   It should be an integer value greater than or equal to 1.");
 
-        // MODIFY THE FOLLOWING TO GET THE NUMBER OF TRIALS AND LOOP      
-        data = generateRandomArray(arraySize);
+        System.out.println("How many trials should be run?");
+        trials = getInt("   It should be an integer value greater than or equal to 1.");
 
-        System.out.println("The array is: " + getString(data));
-        SortArray.selectionSort(data, arraySize);
+        for (int i = 0; i < trials; i++) {
+            // MODIFY THE FOLLOWING TO GET THE NUMBER OF TRIALS AND LOOP
+            data = generateRandomArray(arraySize);
+
+            //System.out.println("The array is: " + getString(data));
+            sai.selectionSort(data, arraySize);
+            //System.out.println("    comparison made: "+sai.getComparisons());
 
 
-        System.out.println("The sorted array is: " + getString(data));
+            //System.out.println("The sorted array is: " + getString(data));
 
-        // ADD CODE TO REPORT THE NUMBER OF COMPARISONS
+            // ADD CODE TO REPORT THE NUMBER OF COMPARISONS
+        }
+
+        System.out.println(sai.getTotalComparisons() + " comparisons were made.");
+        System.out.println(sai.getMinComparisons() + " is the smallest number of comparisons.");
+        System.out.println(sai.getMaxComparisons() + " is the largest number of comparisons.");
+        long avg = (sai.getTotalComparisons() / trials);
+        System.out.println(avg + " is the average number of comparisons made.");
 
 
     }
