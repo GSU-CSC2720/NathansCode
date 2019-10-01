@@ -1,4 +1,4 @@
-package com.nathan2055.exampleMath;
+package com.nathan2055.example10Math;
 
 public class TestIntegerRounding {
     public static void main(String[] args) {

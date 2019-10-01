@@ -1,4 +1,4 @@
-package com.nathan2055.exampleInterface;
+package com.nathan2055.example20Interface;
 
 public class TestInterfaceMain {
     public static void main(String[] args) {

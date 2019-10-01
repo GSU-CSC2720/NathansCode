@@ -1,4 +1,4 @@
-package com.nathan2055.exampleInterface;
+package com.nathan2055.example20Interface;
 
 public class TestInterfaceImplementation {
     public void method1(int number) {

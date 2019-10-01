@@ -1,4 +1,4 @@
-package com.nathan2055.exampleMath;
+package com.nathan2055.example10Math;
 
 public class Stats {
     private int min = 0, max = 0, avg = 0;
