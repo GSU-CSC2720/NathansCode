@@ -1,4 +1,4 @@
-package Lab4;
+package com.nathan2055.lab40ArraySort;
 
 /********************************************************************
  * Class for sorting an array of Comparable objects from smallest to

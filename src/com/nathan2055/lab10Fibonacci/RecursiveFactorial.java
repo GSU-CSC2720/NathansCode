@@ -1,4 +1,4 @@
-package Lab1;
+package com.nathan2055.lab10Fibonacci;
 
 public class RecursiveFactorial {
 

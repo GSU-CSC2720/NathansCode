@@ -1,4 +1,4 @@
-package Lab1;
+package com.nathan2055.lab10Fibonacci;
 
 /**
  * A class holding different recursive methods to compute Fibonacci numbers.

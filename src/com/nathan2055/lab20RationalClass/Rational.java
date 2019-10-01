@@ -1,4 +1,4 @@
-package Lab2x0;
+package com.nathan2055.lab20RationalClass;
 
 /**
  * A class that represents a rational number.

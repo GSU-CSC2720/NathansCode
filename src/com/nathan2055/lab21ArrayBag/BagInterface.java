@@ -1,4 +1,4 @@
-package Lab2x1;
+package com.nathan2055.lab21ArrayBag;
 
 /**
    An interface that describes the operations of a bag of objects.

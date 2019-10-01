@@ -1,4 +1,4 @@
-package Lab4;
+package com.nathan2055.lab40ArraySort;
 
 import java.util.Random;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package Lab3;
+package com.nathan2055.lab30ArrayMax;
 
 
 /**

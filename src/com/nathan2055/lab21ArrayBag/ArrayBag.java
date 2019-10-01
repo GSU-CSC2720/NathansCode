@@ -1,4 +1,4 @@
-package Lab2x1;
+package com.nathan2055.lab21ArrayBag;
 
 import java.util.HashMap;
 import java.util.Random;

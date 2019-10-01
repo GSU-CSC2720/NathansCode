@@ -1,4 +1,4 @@
-package Lab2x1;
+package com.nathan2055.lab21ArrayBag;
 
 /**
  * This class performs tests on the extensions to the ArrayBag class.
