@@ -1,6 +1,6 @@
 package com.nathan2055.lab60Stack;
 
-import testlinkedlist.Node;
+import com.nathan2055.lab60Stack.Node;
 
 public class StackReferenceBased implements StackInterface {
 

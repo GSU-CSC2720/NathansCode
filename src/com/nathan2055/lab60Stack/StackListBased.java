@@ -1,7 +1,7 @@
 package com.nathan2055.lab60Stack;
 
-import testlinkedlist.ListInterface;
-import testlinkedlist.ListReferenceBased;
+import com.nathan2055.lab60Stack.ListInterface;
+import com.nathan2055.lab60Stack.ListReferenceBased;
 
 public class StackListBased implements StackInterface {
 
