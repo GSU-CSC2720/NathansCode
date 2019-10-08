@@ -20,10 +20,10 @@ public class DriverStack {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        displayStack(getRandomStack(10));
+        System.out.println(displayStack(getRandomStack(10)));
     }
 
-    public static void displayStack(StackInterface stack) {
+    public static String displayStack(StackInterface stack) {
         String items = "";
         List temp = new ArrayList();
         int size = 0;
@@ -38,7 +38,7 @@ public class DriverStack {
         for (int i = 0; i < size; i++) {
             stack.push(temp.get(i));
         }
-        System.out.println(items);
+        return items;
     }
 
     public static StackInterface getRandomStack(int size) {
