@@ -34,9 +34,20 @@ public class StackReferenceBased implements StackInterface {
     }
 
     @Override
+    public void popAndDiscard(int count) throws StackException {
+        if (!isEmpty()) {
+            Node temp = top;
+            top = top.next;
+            return temp.item;
+        } else {
+            throw new StackException("pop error");
+        }
+    }
+
+
+    @Override
     public Object peek() throws StackException {
         if (!isEmpty()) {
-
             return top.item;
         } else {
             throw new StackException("peek error");

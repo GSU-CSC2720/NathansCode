@@ -22,7 +22,7 @@ public class StackArrayBased implements StackInterface {
         if (!isFull()) {
             items[++top] = newItem;
         } else {
-            throw new StackException("pushh error");
+            throw new StackException("push error");
         }
     }
 
@@ -34,6 +34,19 @@ public class StackArrayBased implements StackInterface {
         }
     }
 
+    public void popAndDiscard(int count) throws StackException {
+        int check = count;
+        while (!isFull()) {
+            for (int i = 0; i < count; i++) {
+                Object item = items[top--];
+                check--;
+            }
+        }
+        if (check != 0){
+            throw new StackException("Attempted to remove more items than exist in the stack");
+        }
+    }
+    
     public Object peek() throws StackException {
         if (!isFull()) {
             return items[top];
