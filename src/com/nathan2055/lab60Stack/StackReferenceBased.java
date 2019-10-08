@@ -1,9 +1,6 @@
 package com.nathan2055.lab60Stack;
 
-import com.nathan2055.lab60Stack.Node;
-
 public class StackReferenceBased implements StackInterface {
-
     private Node top;
 
     public StackReferenceBased() {
@@ -45,5 +42,4 @@ public class StackReferenceBased implements StackInterface {
             throw new StackException("peek error");
         }
     }
-
 }

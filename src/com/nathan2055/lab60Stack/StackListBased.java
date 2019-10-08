@@ -1,10 +1,6 @@
 package com.nathan2055.lab60Stack;
 
-import com.nathan2055.lab60Stack.ListInterface;
-import com.nathan2055.lab60Stack.ListReferenceBased;
-
 public class StackListBased implements StackInterface {
-
     private ListInterface list;
 
     public StackListBased() {
@@ -46,5 +42,4 @@ public class StackListBased implements StackInterface {
             throw new StackException("pop error");
         }
     }
-
 }
