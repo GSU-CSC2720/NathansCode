@@ -42,11 +42,11 @@ public class StackArrayBased implements StackInterface {
                 check--;
             }
         }
-        if (check != 0){
+        /*if (check != 0) {
             throw new StackException("Attempted to remove more items than exist in the stack");
-        }
+        }*/
     }
-    
+
     public Object peek() throws StackException {
         if (!isFull()) {
             return items[top];

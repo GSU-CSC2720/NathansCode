@@ -35,13 +35,17 @@ public class StackReferenceBased implements StackInterface {
 
     @Override
     public void popAndDiscard(int count) throws StackException {
-        if (!isEmpty()) {
-            Node temp = top;
-            top = top.next;
-            return temp.item;
-        } else {
-            throw new StackException("pop error");
+        int check = count;
+        while (!isEmpty()) {
+            for (int i = 0; i < count; i++) {
+                Node temp = top;
+                top = top.next;
+                check = check--;
+            }
         }
+        /*if (check != 0) {
+            throw new StackException("Attempted to remove more items than exist in the stack");
+        }*/
     }
 
 

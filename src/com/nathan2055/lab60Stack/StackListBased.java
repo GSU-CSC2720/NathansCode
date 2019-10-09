@@ -42,9 +42,9 @@ public class StackListBased implements StackInterface {
                 check = check--;
             }
         }
-        if (check != 0) {
+        /*if (check != 0) {
             throw new StackException("Attempted to remove more items than exist in the stack");
-        }
+        }*/
     }
 
     @Override
