@@ -37,17 +37,29 @@ public class DriverStack {
         stack3.popAndDiscard(5);
         System.out.println(displayStack(stack3));
 
-        // Ensure no crashes occur if a stack is emptied via popAndDiscard
-        stack1.popAndDiscard(6);
-        System.out.println(displayStack(stack1));
-        stack2.popAndDiscard(6);
-        System.out.println(displayStack(stack2));
-        stack3.popAndDiscard(6);
-        System.out.println(displayStack(stack3));
+        // Ensure exception handling works properly
+        try {
+            stack1.popAndDiscard(6);
+            System.out.println(displayStack(stack1));
+        } catch (StackException e) {
+            System.out.println("stack1 is working");
+        }
+        try {
+            stack2.popAndDiscard(6);
+            System.out.println(displayStack(stack2));
+        } catch (StackException e) {
+            System.out.println("stack2 is working");
+        }
+        try {
+            stack3.popAndDiscard(6);
+            System.out.println(displayStack(stack3));
+        } catch (StackException e) {
+            System.out.println("stack3 is working");
+        }
     }
 
     private static String displayStack(StackInterface stack) {
-        String items = "";
+        String items = "{ ";
         List temp = new ArrayList();
         int size = 0;
         for (int i = 0; !stack.isEmpty(); i++) {
@@ -61,6 +73,7 @@ public class DriverStack {
         for (int i = 0; i < size; i++) {
             stack.push(temp.get(i));
         }
+        items = items + " }";
         return items;
     }
 

@@ -35,16 +35,13 @@ public class StackListBased implements StackInterface {
 
     @Override
     public void popAndDiscard(int count) throws StackException {
-        int check = count;
-        while (!list.isEmpty()) {
+        try {
             for (int i = 0; i < count; i++) {
                 list.remove(0);
-                check = check--;
             }
+        } catch (Exception e) {
+            throw new StackException("pop error");
         }
-        /*if (check != 0) {
-            throw new StackException("Attempted to remove more items than exist in the stack");
-        }*/
     }
 
     @Override
