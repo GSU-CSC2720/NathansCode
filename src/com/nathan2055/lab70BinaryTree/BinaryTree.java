@@ -104,4 +104,12 @@ public class BinaryTree<T> extends BinaryTreeBasis<T> {
             return rightTree;
         }  // end if
     }  // end detachRightSubtree
+
+    public boolean isLeaf() {
+        if ((root.leftChild == null) && (root.rightChild == null)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 } // end BinaryTree

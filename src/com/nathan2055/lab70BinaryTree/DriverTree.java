@@ -6,7 +6,15 @@ public class DriverTree {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        BinaryTree<Integer> leaftest1 = new BinaryTree<Integer>();
+        leaftest1.setRootItem(40);
+        System.out.println(leaftest1.isLeaf());
+
+        BinaryTree<Integer> leaftest2 = new BinaryTree<Integer>();
+        leaftest2.setRootItem(40);
+        leaftest2.attachLeft(30);
+        leaftest2.attachRight(50);
+        System.out.println(leaftest2.isLeaf());
 
         BinaryTree<Integer> tree3 = new BinaryTree<Integer>(70);
 
@@ -29,9 +37,6 @@ public class DriverTree {
 
         while (btIterator.hasNext()) {
             System.out.println(btIterator.next());
-
         }
-
     }
-
 }
