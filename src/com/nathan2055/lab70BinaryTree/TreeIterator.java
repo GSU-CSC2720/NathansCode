@@ -1,17 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package drivertree;
+package com.nathan2055.lab70BinaryTree;
 
 import java.util.Iterator;
 import java.util.LinkedList;
 
-/**
- *
- * @author fansari
- */
 public class TreeIterator<T> implements Iterator<T> {
 
     private BinaryTreeBasis<T> binTree;

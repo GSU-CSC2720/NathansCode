@@ -1,18 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package drivertree;
+package com.nathan2055.lab70BinaryTree;
 
-/**
- *
- * @author fansari
- */
-/**
- *
- * @author forough
- */
 public class TreeNode<T> {
 
     T item;
@@ -27,8 +14,8 @@ public class TreeNode<T> {
     }  // end constructor
 
     public TreeNode(T newItem,
-            TreeNode<T> left, TreeNode<T> right) {
-  // Initializes tree node with item and
+                    TreeNode<T> left, TreeNode<T> right) {
+        // Initializes tree node with item and
         // the left and right children references.
         item = newItem;
         leftChild = left;
